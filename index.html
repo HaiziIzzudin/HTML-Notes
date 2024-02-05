@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota IMC452</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue|JetBrains+Mono|Roboto+Condensed">
+
+  <style>
+    body { 
+      background-color: beige;
+      padding: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    * { font-family: "Comic Neue"; margin: 0; padding: 0;}
+    ul, ol { margin-left: 25px; }
+    th {
+      border: 1px solid;
+      border-radius: 10px 10px 0 0;
+      padding: 5px 0;
+    }
+    td {
+      border: 1px solid;
+      padding: 5px;
+      vertical-align: top;
+    }
+    td:first-child {
+      font-weight: bold;
+    }
+    ol > li, ul > li {
+      margin: 5px 0;
+    }
+    strong {
+      background: linear-gradient(90deg, pink, hotpink);
+      padding: 0 5px;
+      border-radius: 5px;
+    }
+    em > strong {
+      background: linear-gradient(90deg, aqua, chartreuse);
+      padding: 0 5px;
+      border-radius: 5px;
+    }
+    pre { font-family: "JetBrains Mono";}
+    .nest1 th, .nest1 td { 
+      overflow-wrap: break-word; 
+      font-family: "Roboto Condensed";
+      font-size: 14px;
+
+      padding: 2px 5px; 
+    }
+  </style>
+</head>
+<body>
+    
+    <h1>IMC452 Introduction to Metadata Concise Notes</h1>
+
+    <h6>
+      <b>DISCLAIMER: This content is not marketed to be fully complete, this is concise revision notes. Expect contents to be shorten or removed from the original notes. You have been warned.
+      <br><br>Contributors: Haziq Izwan (CDIM263), and Haizi (CDIM263).
+      <br><br>Best viewed on Destop browser, or tablet, or on mobile (Portrait need to zoom out a bit, or view in landscape.)</b>
+    </h6>
+
+<table>
+    <thead>
+    <tr>
+    <th>Item</th>
+    <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>What is metadata?</td>
+    <td><ul dir="auto"><li>Data about data</li><li>An abstraction of the data.</li><li>Meaningful data describing another discrete data object.</li><li> Means that the relationship between data object and the metadata describing its functionally identical to the relationship between a book and its library catalog record.</li><li>Structured description of data object</li></ul></td>
+    </tr>
+    <tr>
+    <td>What is Dublin Core Metadata Initiative (DCMI)?</td>
+    <td>...is a metadata element set intended to facilitate discovery of electronic resources.</td>
+    </tr>
+    <tr>
+    <td>Why does it favoured over other Metadata Schemas?</td>
+    <td>Originally conceived for author - it has attracted the attention of formal resource description communities such as museums, libraries, government agencies and commercial organization.</td>
+    </tr>
+    <tr>
+    <td>Key characteristics of DCMI</td>
+    <td><ol dir="auto"><li>Simplicity </li><li>Semantic interoperability </li><li>International consensus </li><li>Extensibility </li><li>Modularity</li></ol></td>
+    </tr>
+    <tr>
+    <td>Describe more about DCMI</td>
+    <td><ul dir="auto"><li>Positioned as a simple information resources description format.</li><li>Aims to provide a basis for semantic interoperability between other, often more complicated formats.</li><li>DC benefits from active participation and promotion in some 20 countries in North America, Europe, Australia and Asia.</li><li>Representatives of the DC effort have helped to develop the Resources Description Framework (RDF), an infrastructure that supports coexistence of complementary, independently maintained metadata packages.</li></ul></td>
+    </tr>
+    <tr>
+    <td>Give 7 properties used for DCMI schema.</td>
+    <td><ol dir="auto"><li><em><strong>DC Title:</strong></em> The name or names by which a resource is formally known.</li><li><em><strong>DC Date:</strong></em> Description of any dates or ranges in the lifecycle of a resource and is typically associated with the creation or availability.</li><li><em><strong>DC Format:</strong></em> File format, the physical medium, or the dimension (the size or duration) of a resource. The information can be relevant to determine the equipment needed to display or operate a resource. To specify the different categories of format you should use extent and/or medium. To reference to the nature or genre of the content use type.</li><li><em><strong>DC Type:</strong></em> Description of the nature or genre of the content of a resource. To describe the physical or digital manifestation, use format.</li><li><em><strong>DC Creator:</strong></em> The person, an organization, or a service primarily responsible for making the content of a resource.</li><li><em><strong>DC Description:</strong></em> Description of the content of a resource. The description is a potentially rich source of indexable terms and assist the users in their selection of an appropriate resource.</li><li><em><strong>DC Subject:</strong></em> Relationship between a resource and another resource which is a topic of the first resource rsp. describes the intellectual content of the first resource.</li></ol></td>
+    </tr>
+    <tr>
+    <td>4 Priciples of Metadata:</td>
+    <td><strong>1. Modularity</strong><ul dir="auto"><li>Characterized by  <em><strong>diverse sources of content, styles of content management, and approaches to resource description</strong></em>. </li><li>Allows designers of metadata schemas to <em><strong>create new assemblies based on established metadata schemas</strong></em> and benefit from observed best practice. </li><li>Data elements from different schemas, vocabularies and other building blocks can be combined in a <em><strong>syntactically and semantically interoperable way</strong></em>.</li></ul><strong>2. Extensibility</strong><ul dir="auto"><li>Must allow for <em><strong>extensions</strong></em> so that particular needs of a given application can be accommodated. </li><li>Some metadata elements are <em><strong>likely to be found in most metadata schemas, while others will be specific to particular applications or domains</strong></em>.</li><li>Must <em><strong>easily accommodate the notion of a base schema</strong></em> with additional elements that tailor a given application to local needs or domain-specific needs without  compromising the interoperability provided by the base schema.</li></ul><strong>3. Refinement</strong><ul dir="auto"><li>metadata standards should allow schema designers to <em><strong>choose a level of detail</strong></em> appropriate to a given application.</li><li>2 notions of refinement to consider:<ol dir="auto"><li>Addition of qualifiers that <em><strong>refine</strong></em> the meaning of an element. E.g.: <em>Illustrator, author, composer, or sculptor</em> are all particular types of general term <em>creator</em>.</li><li><em><strong>Specification</strong></em> of particular schemes or value sets that define the range of values for a given element. This way, semantic interoperability across applications can be increased by relying on a common value set.</li></ol></li></ul><strong>4. Multilingualism</strong><ul dir="auto"><li>The Web affords unprecedented access to resources.</li><li>Complementary processes of <em><strong>internationalization</strong></em> and <em><strong>localization</strong></em>.</li><li>These two processes can sometimes work at cross-purposes. While global resource discovery is best served by internationalization, the needs of any given community may be better served by supporting local conventions.</li></ul></td>
+    </tr>
+    <tr>
+    <td>9 Practicalities of Metadata:</td>
+    <td><ol dir="auto"><li><strong>Application Profile</strong><br>Assemblage of metadata elements selected from one or more metadata schemas and combined in a compound schema.</li><li><strong>Syntax and Semantics</strong><br>Semantics is about meaning; syntax is about form.</li><li><strong>Association Models</strong><br><em>Embedded metadata</em> resides within the markup of the resource. <em>Associated metadata</em> is maintained in files tightly coupled to the resources they describe. <em>Third-Party metadata</em> is maintained in a separate repository by an organization.</li><li><strong>Identifying and Naming Metadata Elements</strong><br>Particular tools and applications can use different presentation labels within their systems to make the labels more understandable and useful in a given linguistic, cultural, or domain context.</li><li><strong>Metadata Registries</strong><br>...provide the means to identify and refer to established schemas and application profiles, potentially including the means for machine mapping among different schemas.</li><li><strong>Completeness of Description</strong><br>...will be determined by policies and best practices designated by the agency creating the metadata, and those policies and practices will be guided by the functional requirements of services or applications. </li><li><strong>Mandatory Versus Optional Elements</strong><br>An element that is essential in one domain may not even be sensible in another, hence few, if any, elements in a general metadata set should be thought of as mandatory. </li><li><strong>Subjective and Objective Metadata</strong><br><em>Objective metadata</em> can be machine generated in most instances, while <em>Subjective metadata</em> are specifically intended to represent a subjective evaluation.</li><li><strong>Automated Generation of Metadata</strong><br>...that can be automated to some degree, and which can be expected to grow in importance as advances in such areas as natural language processing, data mining, profile and pattern recognition algorithms become more effective.</li></ol></td>
+    </tr>
+    <tr>
+    <td>5 Types of Metadata</td>
+    <td><ol dir="auto"><li><em><strong>Administrative</strong></em> metadata in managing and administering informatio resources.</li><li><em><strong>Descriptive</strong></em> metadata used to describe or identify information resources (manual metadata created by people).</li><li><em><strong>Preservation</strong></em> metadata related to the preservation management of information resources.</li><li><em><strong>Technical</strong></em> metadata related to how a system functions or metadata behaves, file format and compression scheme.</li><li><em><strong>Use</strong></em> metadata related to the level and type of user information resources.</li></ol></td>
+    </tr>
+    <tr>
+    <td>Attributes and characteristics of Metadatada</td>
+    <td><ol dir="auto"><li><em><strong>Internal metadata source</strong></em> generated by creating agent for an information object at the time when it is first created or digitized.</li><li><em><strong>External metadata source</strong></em> relating to an information object that is created later, often by someone other than the original creator.</li><li><em><strong>Automatic metadata</strong></em> generated by a computer.</li><li><em><strong>Manual metadata</strong></em> created by people.</li></ol></td>
+    </tr>
+    <tr>
+    <td>Nature of Metadata</td>
+    <td>Metadata created by persons who are neither subject nor information specialists, often the original creator of the information object.</td>
+    </tr>
+    <tr>
+    <td>Structure of Metadata</td>
+    <td><em><strong>Structured metadata</strong></em> that conforms to a predictable standardized structure.<br><br><em><strong>Unstructured metadata</strong></em> that does not conform to any standardized vocabulary or authority form.</td>
+    </tr>
+    <tr>
+    <td>Metadata Semantics</td>
+    <td><em><strong>Controlled metadata</strong></em> that conforms to a standardized vocabulary or authority form.<br><br><em><strong>Uncontrolled metadata</strong></em> that does not conform to any standardized vocabulary or authority form</td>
+    </tr>
+    <tr>
+    <td>Level of Metadata</td>
+    <td><em><strong>Collection metadata</strong></em> relating to collections of information objects.<br><br><em><strong>Expert metadata</strong></em> created by either subject or information specialists, often not the original creator of the information object.</td>
+    </tr>
+    <tr>
+    <td>Status of Metadata</td>
+    <td><em><strong>Static metadata</strong></em> that never change once it has been created. <br><br><em><strong>Dynamic metadata</strong></em> that may change with the use or manipulation of an information object.<br><br><em><strong>Long-term metadata</strong></em> necessary to ensure that the information object continues to be accessible and usable.<br><br><em><strong>Short- term metadata</strong></em> mainly of a transactional nature</td>
+    </tr>
+    <tr>
+    <td>Item Metadata</td>
+    <td>...relating to individual information object often contained within collections.</td>
+    </tr>
+    <tr>
+    <td>Describe the creation of Metadata</td>
+    <td><ol dir="auto"><li><em><strong>Creation and Identification:</strong></em> Capture and store records, Assign unique identifying information, Provide security, Support authentication clearance, Version control.</li><li><em><strong>Maintenance:</strong></em> Maintain and apply appraisal criteria and authorization.</li><li><em><strong>Control and Use:</strong></em> Facilitate internal and external records-communication, search and retrieval; Provision of tracking mechanisms; Facilitate migration, conversion and portability.</li><li><em><strong>Disposition:</strong></em> Notify creator/user of disposal; Dispose of records identified by retention schedule; Maintain archival information in independent format.</li></ol></td>
+    </tr>
+    <tr>
+    <td>Guidance for Creation of Metadata</td>
+    <td><strong>Why?</strong><br>To maintain solely all records in electronic format it is essential to establish a formal, office wide system for creating, filing, labeling, and naming electronic records.<br><br><strong>Advantage:</strong><br>for high turnover of personnel; Information is shared and routed electronically.<br><br><ol dir="auto"><li><strong>Saving Document</strong><ol dir="auto"><li>Consider structure as of prime important.</li><li>Storing structure of the electronic records.</li><li>To make available, understandable and usable of records.</li><li>To consider operating system and its constraints </li></ol></li><li><strong>Naming Conventions</strong><ol dir="auto"><li>Standard Conventions must be available, widely used; and for naming the directories and the files stored under the directories.</li><li>Benefits:<ul dir="auto"><li>Documents can be easily and quickly located in personal or shared workspace, on diskettes, on backup systems or in off-site storage.</li><li>Reducing the risk of duplicating someone else’s work, therefore documents can be reused.</li><li>The file name can be used to distinguish final versions from drafts.</li></ul></li><li>Best to use <strong>standard abbreviations</strong> whenever possible because: <ol dir="auto"><li>Records Manager can identify abbreviations already in use. </li><li>Government telephone directory often contain abbreviations for names of departments and agencies. </li><li>Post offices also provide abbreviations for region-place </li><li>Department wide conventions for names of individuals, locations can be developed and disseminated. </li></ol></li></ol></li></ol></td>
+    </tr>
+    <tr>
+    <td>Give 3 different perspective of metadata</td>
+    <td><ol dir="auto"><li><strong>Content</strong><ul dir="auto"><li>Elements or individual pieces of data combined in the database. </li><li>Content can be manipulated and viewed or printed out in endless configurations. </li><li>Content will change over time, continually updated, deleted and replaced with new information. </li></ul></li><li><strong>Context</strong><ul dir="auto"><li>Identifies the provenance of the record (person or system responsible for creating it). </li><li>Provides data that supports its use as evidence of a transaction. </li></ul></li><li><strong>Structure</strong><ul dir="auto"><li>Information about the design of data or record.</li><li>Defines the logical constructs that make up a record.</li></ul></li></ol></td>
+    </tr>
+    <tr>
+    <td>What is Record Entity?</td>
+    <td><ul dir="auto"><li>The Record Entity is a key component in the preservation of digital objects within a repository. </li><li>It is crucial for <em><strong>maintaining the digital provenance and authenticity of objects</strong></em>. </li><li>The Record Entity is associated with the preservation of intellectual entities and their link to digital objects. </li><li>It plays a vital role in aggregating information about actions affecting objects in the repository. </li><li>The accurate and trustworthy recording of events is essential for maintaining digital provenance and demonstrating the authenticity of objects. </li><li>Information recorded about events includes unique identifiers, event types, date and time of the event, detailed event descriptions, and coded outcomes. </li><li>The Record Entity is closely linked to the Intellectual Entity, which is defined as a conceptual unit for management and description, such as a book, map, photograph, or database, within the preservation repository.</li></ul></td>
+    </tr>
+    <tr>
+    <td>What is Agent Entity?</td>
+    <td><ul dir="auto"><li>The Agent Entity is a crucial component in the preservation of digital objects within a repository, <em><strong>responsible for recording additional information about agents, their roles in events, and their involvement in rights statements</strong></em>. </li><li>Agents are actors that have roles in events and rights statements, and can be people, organizations, or software applications. </li><li>The focus of the Data Dictionary is to identify the agent and classify the agent type (person, organization, or software), emphasizing the significance of unambiguous agent identification in metadata. </li><li>Agents influence objects only indirectly through events, and the role of the agent is a property of the Event entity, not of the Agent entity. </li><li>The Semantic Data Dictionary outlines mandatory and optional semantic units for agent identification and classification, with the mandatory semantic unit being the agentIdentifier. </li><li>Agent information serves to unambiguously identify an agent from all other entities, and it is crucial for maintaining digital provenance and demonstrating the authenticity of objects within the repository.</li></ul></td>
+    </tr>
+    <tr>
+    <td>What is Function Entity?</td>
+    <td><ul dir="auto"> <li>The Function Entity in metadata plays a crucial role in preserving the entire metadata within a repository. </li><li>It contributes to the preservation of metadata by acting as an action or function. </li><li>The Function Entity encompasses various functional entities within the<em><strong>Open Archival Information System (OAIS)</strong></em>model, including Ingest, Archival Storage, Data Management, Preservation Planning, and Access. </li><li>Each functional entity provides specific services and functions, such as accepting submission information packages, storing and managing archival information packages, populating and maintaining descriptive information, providing access to information products, and monitoring the environment to ensure long-term accessibility of stored information. </li><li>The<em><strong>Preservation Planning Functional Entity</strong></em>, a part of the Function Entity, is responsible for monitoring the OAIS environment, providing recommendations and preservation plans to ensure the long-term accessibility and understandability of information stored in the OAIS.</li></ul></td>
+    </tr>
+    <tr>
+    <td>Logical Schema of Metadata</td>
+    <td><ul dir="auto"><li>The logical schema's data model is shaped by the physical component implementing it. In this perspective, <em><strong>a key concept is Schema</strong></em>, which, like a model's concepts, comprises Types of data model.</li><li>Transforming the logical schema into a physical one involves considering storage and performance aspects influenced by the Database Management System (DBMS) in use.</li><li>A logical schema portrays real-world objects, their properties, and relationships using familiar DBMS concepts like tables, attributes (columns), primary keys, and foreign keys.</li></ul></td>
+    </tr>
+    <tr>
+    <td>Functional Schema of Metadata</td>
+    <td><ul dir="auto"><li>Basic Functional Schema offers <em><strong>core schema structures for various manual and automated systems</strong></em>.</li><li>It resolves conflicts with configurational schemas.</li><li>Functions in this schema can be simple or complex based on property definitions.</li><li>In a database, there's a common schema for master tables, and Functional Schemas store additional information.</li><li>Functional Schema is flexible, allowing the creation of new entity types for high-level metadata representation.</li></ul></td>
+    </tr>
+    <tr>
+    <td>Object Visualization of Metadata</td>
+    <td><ul dir="auto"><li>Object visualization <em><strong>relies on image processing and neural networks</strong></em>.</li><li>It involves processing visual information about objects, including color and shape, as well as understanding spatial relations and performing transformations.</li><li>The web-based metadata and object visualization frontend presents a list of objects. Clicking an object triggers its visualization, revealing associated metadata.</li></ul></td>
+    </tr>
+    <tr>
+    <td>Difference Between XML and HTML</td>
+    <td>
+      <table class="nest1"> <thead> <tr> <th>Aspect</th> <th>XML</th> <th>HTML</th> </tr> </thead> <tbody> <tr> <td>Purpose</td> <td>Describes structure and meaning of data</td> <td>Defines appearance of data</td> </tr> <tr> <td>Tag Flexibility</td> <td>Allows creation of custom tags</td> <td>Limited to predefined set of tags</td> </tr> <tr> <td>Data Reusability</td> <td>Enables data reuse in various ways</td> <td>Primarily focused on display</td> </tr> <tr> <td>Data Sharing</td> <td>Facilitates sharing in non-proprietary format</td> <td>Emphasis on displaying content</td> </tr> <tr> <td>Extensibility</td> <td>Highly extensible, allowing custom attributes and elements</td> <td>Limited extensibility with fixed tags</td> </tr> <tr> <td>Relationship Focus</td> <td>Emphasizes structure and relationships</td> <td>Emphasis on display and presentation</td> </tr> </tbody> </table>
+    </td>
+    </tr>
+    <tr>
+    <td>Contoh XML</td>
+    <td>
+      <pre>
+&lt;petInformation&gt;
+  &lt;pet&gt;
+    &lt;name&gt;Rex&lt;/name&gt;
+    &lt;type&gt;Dog&lt;/type&gt;
+    &lt;age&gt;3&lt;/age&gt;
+  &lt;/pet&gt;
+&lt;/petInformation&gt;
+      </pre>
+    </td>
+    </tr>
+    <tr>
+    <td>Contoh HTML</td>
+    <td>
+      <pre>
+&lt;div&gt;
+  &lt;h1&gt;Welcome to Our <wbr>Pet Store&lt;/h1&gt;
+  &lt;p&gt;We have a lovely <wbr>selection of pets <wbr>for you to choose from.<wbr>&lt;/p&gt;
+  &lt;img src="dog.jpg" <wbr>alt="Dog"&gt;
+&lt;/div&gt;
+      </pre>
+    </td>
+    </tr>
+    <tr>
+    <td>Advantages of MODS/ Why use MODS?</td>
+    <td><ol dir="auto"> <li><strong>Not MARC:</strong> MODS is a derivative of MARC, but it is not MARC. It offers a more flexible and understandable alternative to MARCXML, allowing for richer descriptions with substructure and semantics that are a more natural fit in a library environment.</li><li><strong>Easier entry point:</strong> MODS is easier to use than MARC, as it does not require the use of codes and uses XML, which is a more widely understood and accessible format.</li><li><strong>More end-user friendly than MARCXML:</strong> MODS is simpler and more understandable than MARCXML, making it more accessible to end-users who may not be familiar with library-specific metadata standards.</li><li><strong>Useful middle ground:</strong> MODS offers a useful middle ground between MARC and simple Dublin Core, providing a balance between richness and flexibility in metadata representation.</li><li><strong>Richer than Dublin Core:</strong> MODS provides a richer metadata element set compared to Dublin Core, allowing for more detailed descriptions of digital objects. </li><li><strong>Hierarchical structure:</strong> MODS' hierarchical structure enables rich descriptions of complex digital objects, making it suitable for organizing and presenting diverse types of content. </li><li><strong>Compatibility with existing descriptions:</strong> The MODS element set is more compatible with existing descriptions than Dublin Core, making it easier to integrate with and build upon previous metadata standards. </li><li><strong>Compatibility with hierarchical METS objects:</strong> MODS is a rich descriptive element set that works well with hierarchical Metadata Encoding and Transmission Standard (METS) objects, enhancing its utility for digital libraries and archives. </li><li><strong>Flexibility and understandability:</strong> MODS offers a more flexible and understandable alternative to MARCXML, allowing for richer descriptions with substructure and semantics that are a more natural fit in a library environment.</li></ol></td>
+    </tr>
+    <tr>
+    <td>Features of MODS</td>
+    <td><ol dir="auto"> <li><strong>Language-based tags:</strong> MODS uses language-based tags, which are more readily understandable and easier to use than numeric tags.</li><li><strong>Inherited semantics:</strong> MODS elements generally inherit semantics from the Machine-Readable Cataloging (MARC) standard, making it easier to understand and use for those familiar with MARC.</li><li><strong>Applicability to digital resources:</strong> MODS includes elements that are particularly applicable to digital resources, such as digital object identifiers (DOIs) and technical metadata. </li><li><strong>No specific rules for description:</strong> MODS does not assume the use of any specific rules for description, allowing for flexibility in how metadata is created and used. </li><li><strong>Reusable element descriptions:</strong> MODS element descriptions are reused throughout the schema, reducing redundancy and making it easier to create and maintain metadata. </li><li><strong>XML schema:</strong> MODS uses XML schema, which allows for flexibility and availability of freely available tools for creating, validating, and transforming metadata.</li></ol></td>
+    </tr>
+    <tr>
+    <td>List out MODS high-level elements (19).</td>
+    <td><ol dir="auto"> <li>Title Info </li><li>Name </li><li>Type of resource </li><li>Genre </li><li>Origin Info </li><li>Language </li><li>Physical description </li><li>Abstract </li><li>Table of contents </li><li>Target audience </li><li>Note </li><li>Subject </li><li>Classification </li><li>Related item </li><li>Identifier </li><li>Location </li><li>Access conditions </li><li>Extension </li><li>Record Info</li></ol></td>
+    </tr>
+    <tr>
+    <td>Two types of MODS elements</td>
+    <td><ol dir="auto"><li>Simple Element</li><li>Wrapper Element</li></ol></td>
+    </tr>
+    <tr>
+    <td>What is Shareable Metadata?</td>
+    <td><ol dir="auto"><li>Quality metadata that is <em><strong>accurate</strong></em>, <em><strong>consistent</strong></em>, and <em><strong>reliable</strong></em>. </li><li>Promotes search interoperability, allowing for meaningful search results across diverse sets of metadata records. </li><li>Human understandable outside of its local context, ensuring that the metadata can be comprehended by individuals not familiar with its original context.</li><li>Useful outside of its local context, enabling the metadata to serve a purpose beyond its initial creation environment.</li><li>Machine processable, allowing for automated processing and integration into different systems and workflows.</li></ol></td>
+    </tr>
+    <tr>
+    <td>Implications/ Issues of Poor Metadata Practices</td>
+    <td><ol dir="auto"> <li><strong>Difficulty in Finding Records:</strong> Poor metadata practices can make it difficult to find records because they were not classified or indexed properly, or there is no thesaurus or other tools to facilitate access and retrieval. </li><li><strong>Inability to Relate Records:</strong> Poor metadata practices can make it difficult to relate records documenting a given work process to one another, making it impossible to understand the full 'story' of what occurred. </li><li><strong>Inability to Control Access and Use:</strong> Poor metadata practices can place the security of records at risk if metadata documenting access permissions, the security status of records, and the related security provisions are inadequate or missing. </li><li><strong>Risk to Authenticity and Integrity of Records:</strong> Poor metadata practices can bring into question the authenticity, validity, and integrity of certain records, making it difficult to authenticate records and control access and use. </li><li><strong>Business and Operational Issues:</strong> Poor metadata practices can make it difficult for staff to find and understand the records and information they need to achieve their operational goals, leading to business and operational issues. </li><li><strong>Legal and Regulatory Compliance Issues:</strong> Poor metadata practices can lead to legal and regulatory compliance issues, making it difficult for organizations to comply with laws and regulations. </li><li><strong>Lack of Trust in Government:</strong> Poor metadata practices can lead to a lack of trust in government's ability to manage its information, making it difficult to comply with the Freedom of Information law.</li></ol></td>
+    </tr>
+    <tr>
+    <td>Example of Poor Metadata Practices</td>
+    <td><ol dir="auto"><li><strong>Incomplete Supporting Documents:</strong> Support documents were incomplete, leading to overlooked information.</li><li><strong>Reuse of Payroll Numbers:</strong> Reusing a unique payroll number to add an employee to the payroll resulted in creating a ghost worker and defrauding the government.</li><li><strong>Lack of Linking Records:</strong> Records not linked by descriptions led to a flawed security policy that had to be immediately withdrawn and revised.</li><li><strong>Errors in Company Contact Details:</strong> Errors in the company's contact details in the vendor database led to sending a Purchase Order to the wrong address, causing customer frustration and lack of trust in the government.</li></ol></td>
+    </tr>
+    <tr>
+    <td>How can we circumvent poorly managed metadata?</td>
+    <td><ol dir="auto"> <li><strong>Developing Metadata Standards:</strong> Developing metadata standards can help ensure that metadata is captured consistently and accurately. </li><li><strong>Implementing Records Management Policies:</strong> Implementing records management policies can help ensure that records are managed effectively throughout their lifecycle, including the capture and management of metadata. </li><li><strong>Providing Training and Education:</strong> Providing training and education to staff can help ensure that they understand the importance of metadata and how to manage it effectively. </li><li><strong>Using Technology:</strong> Using technology such as digital signatures, audit trails, and digital stamps can help authenticate records and control access and use. </li><li><strong>Retaining Records and Supporting Metadata:</strong> Retaining records and supporting metadata in a secure and accessible manner can help ensure that they are available when needed. </li><li><strong>Collaborating with Archivists:</strong> Collaborating with archivists can help ensure that metadata created in records-creating organizations, when combined with metadata provided by archivists, facilitate access and retrieval and support the management of the records as archival records through time.</li></ol></td>
+    </tr>
+    </tbody>
+    </table>
+
+</body>
+</html>
