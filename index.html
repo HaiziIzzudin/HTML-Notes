@@ -6,13 +6,32 @@
     <title>Nota IMC452</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue|JetBrains+Mono|Roboto+Condensed">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script type="module" src="main.js"></script>
   <style>
+    :root .light-theme {
+      --backgroundColor: beige;
+      --foregroundColor: black;
+
+      --highlightFGColor: black;
+    }
+    :root .dark-theme {
+      --backgroundColor: #1a1a1a;
+      --foregroundColor: whitesmoke;
+      
+      --highlightFGColor: black;
+    }
+    
     body { 
-      background-color: beige;
+      background-color: var(--backgroundColor);
+      color: var(--foregroundColor);
+
       padding: 10px;
       max-width: 800px;
       margin: 0 auto;
+
+      transition-duration: .3s;
     }
     * { font-family: "Comic Neue"; margin: 0; padding: 0;}
     ul, ol { margin-left: 25px; }
@@ -34,11 +53,15 @@
     }
     strong {
       background: linear-gradient(90deg, pink, hotpink);
+      color: var(--highlightFGColor);
+      
       padding: 0 5px;
       border-radius: 5px;
     }
     em > strong {
       background: linear-gradient(90deg, aqua, chartreuse);
+      color: var(--highlightFGColor);
+      
       padding: 0 5px;
       border-radius: 5px;
     }
@@ -50,10 +73,36 @@
 
       padding: 2px 5px; 
     }
+
+    button {
+      background-color: transparent;
+      color: var(--foregroundColor);
+
+      border: 1px solid var(--foregroundColor);
+      border-radius: 20px;
+
+      padding: 5px 10px;
+      margin-bottom: 5px;
+
+      font-weight: bold;
+      font-family: "ROboto Condensed";
+
+      cursor: pointer;
+
+      transition-duration: .3s;
+    }
+    button:hover {
+      box-shadow: 0 0 10px 0 var(--foregroundColor);
+    }
+    .fa-solid {
+      margin-left: 4px;
+    }
   </style>
 </head>
 <body>
     
+    <button class="theme-button">Change Theme <i class="fa-solid fa-circle-half-stroke"></i></button>
+
     <h1>IMC452 Introduction to Metadata Concise Notes</h1>
 
     <h6>
