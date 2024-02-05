@@ -27,7 +27,7 @@
       background-color: var(--backgroundColor);
       color: var(--foregroundColor);
 
-      padding: 10px;
+      padding: 50px 10px;
       max-width: 800px;
       margin: 0 auto;
 
@@ -75,7 +75,7 @@
     }
 
     button {
-      background-color: transparent;
+      background-color: var(--backgroundColor);
       color: var(--foregroundColor);
 
       border: 1px solid var(--foregroundColor);
@@ -90,13 +90,15 @@
       cursor: pointer;
 
       transition-duration: .3s;
+
+      position: fixed;
+      top: 10px; left: 10px;
+      z-index: im;
     }
     button:hover {
       box-shadow: 0 0 10px 0 var(--foregroundColor);
     }
-    .fa-solid {
-      margin-left: 4px;
-    }
+    .fa-solid { margin-left: 4px; }
   </style>
 </head>
 <body>
