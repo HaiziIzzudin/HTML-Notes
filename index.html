@@ -75,8 +75,8 @@
     }
 
     button {
-      background-color: var(--backgroundColor);
-      color: var(--foregroundColor);
+      background-color: var(--foregroundColor);
+      color: var(--backgroundColor);
 
       border: 1px solid var(--foregroundColor);
       border-radius: 20px;
@@ -92,7 +92,7 @@
       transition-duration: .3s;
 
       position: fixed;
-      top: 10px; left: 10px;
+      top: 10px;
       z-index: im;
     }
     button:hover {
@@ -332,6 +332,17 @@
       Plus, XML by design is flexible and easily understandable by humans, since it uses language-based tags.
       MODS has reserved word (or High-level elements), like name, language, physical description, abstract, location, record info, and notes.
       <br><br>
+      ISO 23081 is a standard that provides guidelines for developing and managing metadata for records and documents. It focuses on the creation, capture, and management of metadata to ensure the effective use and preservation of records and documents over time. The standard aims to establish a common understanding and approach to metadata within organizations.
+      <br><br>
+      PREMIS (Preservation Metadata: Implementation Strategies) standard talks about: 
+      (1) Embedding Metadata where metadata encoded in same digital object it describes (for example EXIF metadata in JPEG files).
+      (2) Metadata is Stored Separately in a repository and linked to objects. 
+      (3) Database Preservation Metadata schema designed for preservation needs.
+      (4) XML Encoding for flexibility and interoperability 
+      (5) METS Structure allowing embedding metadata and external links to metadata.
+      (6) Uses of RDF and Ontologies to represent semantic preservation metadata.  
+      (7) The use of Middleware Abstraction Layer to store and provide access to metadata.
+      <br><br>
       Failure of following the above guidelines can cause serious consequences, especially in government sector.
       Supporting document that is incomplete can cause difficulty in finding records.
       An abuse of payroll numbers can cause fraud and large scale business and operation issues.
@@ -344,6 +355,7 @@
     <h6>Initial Revision on 6 Feb 2024, 12:30pm</h6>
     <h6>Second Revision on 6 Feb 2024, 11:14pm</h6>
     <h6>Third Revision on 6 Feb 2024, 11:49pm</h6>
+    <h6>Fourth Revision on 7 Feb 2024, 11:11am</h6>
 
 </body>
 </html>
